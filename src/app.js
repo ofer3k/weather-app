@@ -45,6 +45,7 @@ router.get('/*',function(req,res){
 
 //add the router
 app.use('/', router);
+
 app.listen(4000,()=>{
     console.log('server is running')
 })
