@@ -1,0 +1,21 @@
+html{
+    background-color: blanchedalmond;
+}
+#input{
+    padding: 8px;
+    color: burlywood;
+    
+}
+#button{
+    padding: 8px;
+    color: burlywood;
+    color: cadetblue;
+}
+#div{
+        margin: auto;
+        width: 25%;
+        height: 100vh;
+}
+img{
+    height: 160px;
+}
