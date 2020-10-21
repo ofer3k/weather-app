@@ -11,7 +11,7 @@ button.addEventListener(('click'),()=>{
     secondeP.innerHTML=''
     img.src=''
     const location=input1.value
-    fetch('http://localhost:4000/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{
         response.json().then((data)=>{
             firstP.innerHTML=data.location
             secondeP.innerHTML='the temperature there is '+data.forcast.temperature+' celsius'

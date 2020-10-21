@@ -4,6 +4,7 @@ const geocode= require('./../utils/geocode')
 const forecast= require('./../utils/forecast')
 
 const app = express();
+const port=process.env.PORT||3000
 const router = express.Router();
 
 app.use(express.static(path.join(__dirname,'../public')));
@@ -46,7 +47,7 @@ router.get('/*',function(req,res){
 //add the router
 app.use('/', router);
 
-app.listen(4000,()=>{
-    console.log('server is running')
+app.listen(port,()=>{
+    console.log('server is running on port '+ port)
 })
 
